@@ -41,4 +41,14 @@ CompanyForm.addEventListener('submit', function(e) {
     console.log(`the company you inputed is ${company.value}`)
 })
 
+const handleChange = function(e) {
+    console.log(
+        e.target.name,
+        e.target.value
+    )
+    for(const el of CompanyForm.elements) {
+        el.addEventListener('change', handleChange)
+    }
+}
+
 
