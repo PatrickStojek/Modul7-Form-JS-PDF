@@ -4,14 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modul7-Javascript-formularze</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <form action="index.html" name="forName" method="POST">
+    <form action="index.html" name="forName" method="GET">
         <p>
             <label> Name:
                 <input type="text" name="inputName">
             </label>
         </p>
+    </form>
+    <hr>
+    <form action="" class="reset" method="POST">
+        <div>
+            <label for="">Content: <textarea></textarea></label>
+            <input type="submit">
+            <input type="reset">
+        </div>
+    </form>
+    <hr>
+    <form action="" class="company">
+        <div>
+            <label>company: <input type="text" name="company"></label>
+            <input type="submit">
+        </div>
     </form>
 </body>
 </html>
