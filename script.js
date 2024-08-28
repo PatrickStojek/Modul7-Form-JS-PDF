@@ -44,11 +44,14 @@ CompanyForm.addEventListener('submit', function(e) {
 const handleChange = function(e) {
     console.log(
         e.target.name,
-        e.target.value
+        e.target.value,
     )
-    for(const el of CompanyForm.elements) {
-        el.addEventListener('change', handleChange)
-    }
 }
+
+for(const el of CompanyForm.elements) {
+    el.addEventListener('change', handleChange)
+}
+////////fourth input
+
 
 
