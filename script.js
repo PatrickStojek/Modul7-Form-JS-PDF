@@ -54,13 +54,15 @@ for(const el of CompanyForm.elements) {
 ////////fourth input
 const timeEl = document.querySelector('input[name = "hidden"]');
 
-const formEl = document.querySelector('.hidden');
-formEl.addEventListener('submit', handleSubmit)
+const formEl2 = document.querySelector('.hidden');
+console.log(formEl2)
+formEl2.addEventListener('submit', handleSubmit)
 
 function handleSubmit(e) {
     e.preventDefault()
-    timeEl.value = e.timeStamp;
-    console.log(timeEl.value)
+    formEl2.value = e.timeStamp;
+    console.log(formEl2.value)
 }
+/////////////////////////
 
 
