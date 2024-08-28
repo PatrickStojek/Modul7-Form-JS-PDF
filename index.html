@@ -6,7 +6,9 @@
     <title>Modul7-Javascript-formularze</title>
     <script src="script.js" defer></script>
     <script src="file.js" defer></script>
-    <script src="checkbox.js"></script>
+    <script src="checkbox.js" defer></script>
+    <script src="select.js" defer></script>
+    <script src="XSS.js" defer></script>
 </head>
 <body>
     <form action="index.html" name="forName" method="GET">
@@ -49,5 +51,18 @@
         </label>
         <input type="submit">
     </form>
+    <hr>
+    <label class="optionLabel">user:
+        <select>
+            <option value = '12'>Jan Kowalski</option>
+            <option value = '25'>Marek Nowak</option>
+        </select>
+    </label>
+    <hr>
+    <p>
+        <label>Comment: <textarea class="textArea" ></textarea></label>
+        <input type="submit" value="add">
+    </p>
+    <ul class="comments"></ul>
 </body>
 </html>
